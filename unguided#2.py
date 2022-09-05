@@ -16,7 +16,7 @@ def fibo_iter(n):
         return b
 
 print("Hasil iteratif")    
-for i in range (1, 6):
+for i in range (1, 101):
     start = timeit.default_timer()
     end = timeit.default_timer()
     print(f'Fibonacci data {i}:', end-start,'detik' '\t' 'bilangan Fibonacci ke:',i , 'adalah :', fibo_iter(i))
@@ -30,7 +30,7 @@ def fibo_rek(n):
         return fibo_rek(n-1) + fibo_rek(n-2)
 
 print("Hasil Rekursif")
-for i in range (1, 6):
+for i in range (1, 101):
     start = timeit.default_timer()
     end = timeit.default_timer()
     print(f'Fibonacci data {i}:', end-start,'detik' '\t' 'bilangan Fibonacci ke:',i , 'adalah :', fibo_rek(i))
